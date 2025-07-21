@@ -1,4 +1,4 @@
-//Knapsack algorithm
+//   0/1Knapsack algorithm
 //Using Bottom-Up DP (Tabulation) - O(n x W) Time and Space
 // Function to find the maximum value
 
