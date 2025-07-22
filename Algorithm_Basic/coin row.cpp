@@ -17,7 +17,7 @@ ll coin_row(ll coin[],ll n)
     if(n==2)return max(coin[0],coin[1]);
     f.resize(n+3,0);
 
-    f[0]=0,f[1]=coin[0];
+    f[0]=coin[0],f[1]=coin[1];
     for(ll i=2;i<n;i++)
     {
         f[i]=max(coin[i]+f[i-2],f[i-1]);
