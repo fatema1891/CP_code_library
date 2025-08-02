@@ -1,6 +1,6 @@
 //https://cses.fi/problemset/task/1158
 //This ensures each item is used once,
-// because each dp[j] on the previous state before current item's update.
+
 #include<bits/stdc++.h>
 using namespace std;
 using ll = long long int; 
@@ -35,4 +35,5 @@ int32_t main()
     for(i=1;i<=n;i++)cin>>h[i];
     for(i=1;i<=n;i++)cin>>s[i];
         cout<<maxpage(h,s,k,n)<<'\n';
+
 }
