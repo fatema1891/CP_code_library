@@ -11,8 +11,8 @@ using st=string;
 vl creatTempArr(string pattern)
 {
     ll n=pattern.size();
-    vl lps(n+1,0);
-    ll index=0;// lenth
+    vl lps(n+1,0);      //LPS — Longest Proper Prefix which is also Suffix
+    ll index=0;// len
 
     for(ll i=1;i<n; )
     {
@@ -67,4 +67,5 @@ int32_t main()
     getline(cin,pattern);
    
    kmp(text,pattern);
+
 }
