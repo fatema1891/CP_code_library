@@ -18,7 +18,7 @@ int32_t main()
     ll i,R=0,L=0;
     for(i=1;i<n;i++)
     {
-        if(i<R)
+        if(i<=R)  // if(i<R) Then will come time limit execeded.
         {
             z[i]=min(z[i-L],R-i+1);
         }
@@ -45,3 +45,4 @@ str=geek#geeksforgeeks
    => g e e k # g e e k s f  o  r  g  e  e  k  s
 index=0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17
 */
+
