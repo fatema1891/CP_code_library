@@ -1,3 +1,5 @@
+//https://leetcode.com/contest/weekly-contest-467/problems/maximize-sum-of-at-most-k-distinct-elements/
+
 class Solution {
 public:
     vector<int> maxKDistinct(vector<int>& num, int k) {
@@ -33,4 +35,5 @@ public:
         sort(ans.rbegin(),ans.rend());
         return ans;
     }
+
 };
