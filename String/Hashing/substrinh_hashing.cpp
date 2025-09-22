@@ -46,7 +46,7 @@ int32_t main()
     }
     /*
     s=abcejf
-    hash[i]=(s[0]⋅pi−1+s[1]⋅pi−2+⋯+s[i−1]⋅p0)%mod
+    hash[i]=(s[0]⋅p^(i−1)+s[1]⋅p^(i−2)+⋯+s[i−1]⋅p^0)%mod
     hash[0]=0
     hash[1]=a =hash[0]*prime + a
     hash[2]=a*prime+b =hash[1]*prime +b
@@ -54,5 +54,6 @@ int32_t main()
     hash[4]=a*prime^3 + b*prime^2 + c*prime +e = hash[3]*prime +e
     .......
 
-    hash(l,r)=hash[r]−hash[l−1]⋅pr−l+1
+    hash(l,r)=hash[r]−hash[l−1]⋅p^(r−l+1)
     */
+
