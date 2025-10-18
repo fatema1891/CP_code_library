@@ -10,7 +10,7 @@ const ll mod=1e9+9;
 const ll N=1e5+9;
 ll phi[N];
 
-ll perfect_number(ll n)
+ll sumDiv(ll n)
 {
     ll sumDiv=1;
     for(ll i=2;i*i<=n;i++)
@@ -43,7 +43,7 @@ int32_t main()
     fast;
     ll n;
     cin>>n;
-    cout<<(perfect_number(n)==(n*2)?"perfect\n":"is not perfect\n");
+    cout<<(sumDiv(n)==(n*2)?"perfect\n":"is not perfect\n");
     /*
     perfect number means:
     sum of divisors of n == n*2;
@@ -51,3 +51,4 @@ int32_t main()
     */
 
 }
+
