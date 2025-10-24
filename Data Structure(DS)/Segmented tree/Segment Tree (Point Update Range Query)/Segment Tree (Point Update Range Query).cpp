@@ -65,7 +65,7 @@ int32_t main()
     for(i=1;i<=n;i++)cin>>arr[i];
 
     init(1,1,n);
-    cout<<"initial sum index from begin to end before update : ";
+    cout<<"initial sum of element from begin to end before update : ";
     cout<<query(1,1,n,1,n)<<'\n';
     //query(root,begin_index_node,end_index_node,left,right); 
     //sum of left to right index or node
@@ -73,13 +73,13 @@ int32_t main()
 
     ll l,r;
     cin>>l>>r;
-    cout<<"sum of l to r index befor update : "<<query(1,1,n,l,r)<<'\n';
+    cout<<"sum of element from l to r index befor update : "<<query(1,1,n,l,r)<<'\n';
 
     //update m elemnt
     ll ind,val;
     cin>>ind>>val;
     update(1,1,n,ind,val);
-    cout<<"sum of l to r index after update : "<<query(1,1,n,l,r)<<'\n';
+    cout<<"sum of element from l to r index after update : "<<query(1,1,n,l,r)<<'\n';
 
     
 } 
@@ -95,3 +95,4 @@ ind=4 val=10
 sum of l to r index befor update : 18
 sum of l to r index after update : 24
 */
+
