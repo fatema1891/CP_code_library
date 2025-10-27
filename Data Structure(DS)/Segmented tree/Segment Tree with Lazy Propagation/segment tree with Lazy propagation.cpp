@@ -23,9 +23,9 @@ void init(ll node,ll begin,ll end)
         tree[node].sum=arr[begin]; 
         return;
     }
-    ll left=node*2;//left=node<<2 
-    ll right=node*2+1;//right=node<<2 +1 or right =left | 1 
-    ll mid=(begin+end)/2;//mid=(begin+end)>>2
+    ll left=node*2;//left=node<<1 
+    ll right=node*2+1;//right=node<<1 +1 or right =left | 1 
+    ll mid=(begin+end)/2;//mid=(begin+end)>>1
     init(left,begin,mid);
     init(right,mid+1,end);
 
@@ -103,3 +103,4 @@ sum of l to r index befor update : 14 =>2+3+4+5=14
 sum of element range from 1 to n index after update : 44 => 28+ (5-2+1)*4 = 28+16
 sum of element range from l to r index after update : 30 => 14+(5-2+1)*4 = 14+16=30
 */
+
