@@ -70,4 +70,15 @@ update(1,1,n,ind,val);
 cout<<"Range Min Query(RMq) after update : "<<query(1,1,n,l,r)<<'\n';
    
   return 0;
+
 } 
+/* input: 8 
+3 4 6 9 2 1 2 8
+
+ 2 5
+ 4 -1
+output:
+ Range Min Query(RMq) before update : 2
+Range Min Query(RMq) after update : -1
+*/
+
