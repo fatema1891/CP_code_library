@@ -8,7 +8,7 @@ using vb=vector<bool>;
 const ll mod=1e9+7;
 
  ll N=1e6+7;
- ll lcs(string s,string t)
+ ll lc_substring(string s,string t)
  {
     ll n=s.size(),m=t.size();
     vll dp(n+1,vl(m+1,0));
@@ -51,7 +51,8 @@ int32_t main()
 {
     string s,t;
     cin>>s>>t;
-    cout<<"longest common substring : "<<lcs(s,t)<<'\n';//fa
+    cout<<"longest common substring : "<<lc_substring(s,t)<<'\n';//fa
     cout<<"longest common subsequence : "<<LC_Subsequence(s,t)<<'\n';//faa
     //so all substring is longest common subsequence but all longest common subsequence is not substring
+
 }
