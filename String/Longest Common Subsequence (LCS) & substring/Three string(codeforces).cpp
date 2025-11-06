@@ -42,4 +42,10 @@ const ll mod=1e9+7;
         
     }
  }
+*/a = codes
+b = horse
+c = codeforces
+At each step, we can pick from a or b and compare to c.
+ */
+
  
