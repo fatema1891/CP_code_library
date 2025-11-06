@@ -13,7 +13,7 @@ const ll mod=1e9+7;
     return (c=='+'||c=='-'||c=='*'||c=='/'||c=='^');
  }
 
- string PrefixToInfix(string s)
+ string PrefixToPostfix(string s)
  {
     stack<string>st;
     for(int i=s.size()-1;i>=0;i--)
@@ -39,7 +39,7 @@ const ll mod=1e9+7;
     {
         string s;
         cin>>s;
-        cout<<"Prefix To postfix : "<<PrefixToInfix(s)<<'\n';
+        cout<<"Prefix To postfix : "<<PrefixToPostfix(s)<<'\n';
     }
  }
  /*
@@ -54,3 +54,4 @@ Prefix To postfix : AB+ZX+*
 Prefix To postfix : AT+BAC+-CD+^*
 
 */
+
