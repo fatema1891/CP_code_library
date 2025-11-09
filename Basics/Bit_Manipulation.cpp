@@ -146,7 +146,7 @@ int32_t main()
 
     2. check if a number is power of 2
        if  x & (x-1) == 0 : power of 2
-       if  x (x-1) >0 : not power of 2
+       if  x & (x-1) >0 : not power of 2
 
     3. playing with the kth bit
        (1<<k)=2^k
@@ -197,4 +197,5 @@ int32_t main()
    ll pp=5;
    ll vv=__builtin_popcountll(pp);
    cout<<"builtin "<<vv;
+
 }
