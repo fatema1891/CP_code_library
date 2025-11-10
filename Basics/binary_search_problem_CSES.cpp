@@ -21,10 +21,10 @@ int32_t main()
      {
           cin>>a[i];
      }
-     ll l=0,r=1e18,mid,ans=0;//sort(a,a+n); ll l=0,r=a[0]*t*2,mid,ans=0;  avabe likhleo accepted hobe 
+     ll l=0,r=1e18,mid,ans=0;//sort(a,a+n); ll l=0,r=a[0]*t*2,mid,ans=0;  avabe likhleo accepted hobe     //1st a mid jeno mid=a[0]*t hoi
      while(l<=r)
      {
-          mid=l+(r-l)/2;
+          mid=l+(r-l)/2;  
           ll sum=0;
           for(i=0;i<n;i++)
           {
@@ -38,4 +38,5 @@ int32_t main()
     
 }
      
+
 
