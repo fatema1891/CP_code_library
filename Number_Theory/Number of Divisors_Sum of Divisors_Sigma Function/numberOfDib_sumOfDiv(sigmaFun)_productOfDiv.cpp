@@ -79,7 +79,7 @@ ll sumOfNumOfDivOfDivOfN(ll n)
         if(n%i==0)
         {
             sum+=numberOfDivisor(i);
-            if(i!=n/2)
+            if(i!=n/i)
                 sum+=numberOfDivisor(n/i);
         }
     }
@@ -124,6 +124,7 @@ int32_t main()
     number of divisor of 12=6
     so product of divisor of 12=pow(12,6/2)= pow(12,3)=1728
     */
+
 
 
 }
