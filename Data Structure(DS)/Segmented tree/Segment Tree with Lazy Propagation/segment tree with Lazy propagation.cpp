@@ -2,7 +2,6 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-//Segmented tree is the better approach => of prefix sum, difference array(update value of element)
 
 #define ll long long int 
 #define fast ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0)
@@ -103,4 +102,5 @@ sum of l to r index befor update : 14 =>2+3+4+5=14
 sum of element range from 1 to n index after update : 44 => 28+ (5-2+1)*4 = 28+16
 sum of element range from l to r index after update : 30 => 14+(5-2+1)*4 = 14+16=30
 */
+
 
