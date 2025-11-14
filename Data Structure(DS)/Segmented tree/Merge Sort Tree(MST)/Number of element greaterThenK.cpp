@@ -30,7 +30,7 @@ void build(ll node,ll begin,ll end)
 }
 
 
-//count numbers <=x in range [l,r]
+//count numbers >x in range [l,r]
 ll query(ll node,ll begin,ll end,ll l,ll r,ll x)
 {
     if(l>end||r<begin)return 0;
@@ -57,10 +57,11 @@ int32_t main()
             ll l,r,x;
             cin>>l>>r>>x;
             l--,r--;//convert to 0-index
-            ll ans=query(1,0,n-1,l,r,x);
+            ll ans=query(1,0,n-1,l,r,x);//count_number <=k
             
-             cout<<(r-l+1)-ans<<'\n';//count_greater = total_elements_in_range - count_less_equal_k
+             cout<<(r-l+1)-ans<<'\n';//count_greater(>k) = total_elements_in_range - count_less_equal_k
             
         }
 }
+
 
