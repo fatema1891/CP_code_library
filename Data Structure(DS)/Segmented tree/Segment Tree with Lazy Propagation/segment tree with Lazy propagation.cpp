@@ -31,7 +31,7 @@ void init(ll node,ll begin,ll end)
     tree[node].sum=tree[left].sum+tree[right].sum;
 }
 
-ll query(ll node,ll begin,ll end,ll l,ll r,ll carry=0)//sum of i'th index to j'th index element
+ll query(ll node,ll begin,ll end,ll l,ll r,ll carry=0)//Range sum query
 {
     if(begin>r||end<l)return 0;
     if(begin>=l&&end<=r)
@@ -47,7 +47,7 @@ ll query(ll node,ll begin,ll end,ll l,ll r,ll carry=0)//sum of i'th index to j't
     return sum1+sum2;
 }
 
-void update(ll node,ll begin,ll end,ll l,ll r,ll val) // change of element of i'th index
+void update(ll node,ll begin,ll end,ll l,ll r,ll val)//Range update → add a value in range [l, r]
 {
     //if(l<begin||r>end)return; //or
     if(l>end||r<begin)return;//outgoing
@@ -102,5 +102,6 @@ sum of l to r index befor update : 14 =>2+3+4+5=14
 sum of element range from 1 to n index after update : 44 => 28+ (5-2+1)*4 = 28+16
 sum of element range from l to r index after update : 30 => 14+(5-2+1)*4 = 14+16=30
 */
+
 
 
