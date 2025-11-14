@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-//Segmented tree is the better approach => of prefix sum, difference array(update value of element)
+//Segmented tree is the better approach =>instead of prefix sum, difference array(update value of element)
 
 #define ll long long int 
 #define fast ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0)
@@ -95,4 +95,5 @@ ind=4 val=10
 sum of l to r index befor update : 18
 sum of l to r index after update : 24
 */
+
 
