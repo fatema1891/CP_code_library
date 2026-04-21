@@ -1,0 +1,37 @@
+#include<bits/stdc++.h>
+using namespace std;
+using ll =long long int ;
+using v1=std::vector<ll>;
+using v2=vector<v1>;
+#define fast ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0);
+v2 v;
+string N;
+ll K;
+ll dp[105][5][2];
+
+ll solve(ll pos,ll cnt,ll tight)
+{
+    if(cnt>K)return 0;
+    if(pos==N.size())return (cnt==K);
+    if(dp[pos][cnt][tight]!=-1)return dp[pos][cnt][tight];
+
+    ll ans=0;
+    ll limit=tight ?(N[pos]-'0'):9;
+    for(ll d=0;d<=limit;d++)
+    {
+        ll newCnt=cnt+(d!=0);
+        ll newTight=tight&&(d==limit);
+        ans+=solve(pos+1,newCnt,newTight);
+    }
+    return dp[pos][cnt][tight]=ans;
+}
+
+
+int32_t main()
+{
+    cin>>N>>K;
+    memset(dp,-1,sizeof(dp));
+    cout<<solve(0,0,1);//pos(index) ,count,tight
+    
+    return 0;
+}
