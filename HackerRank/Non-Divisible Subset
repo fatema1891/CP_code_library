@@ -1,0 +1,24 @@
+https://www.hackerrank.com/challenges/non-divisible-subset/problem?isFullScreen=true
+
+code:
+
+int nonDivisibleSubset(int k, vector<int> s) {
+    //if(k==1)return 1;
+    vector<int>rem(k,0);
+    int result=0;
+    for(int x:s)
+    {
+        rem[x%k]++;//remainder :0,1,...k-1
+    }
+    if(rem[0]>0)result++;
+    for(int r=1;r<=int(k/2);r++)
+    {
+        if(r==(k-r))result++;
+        else 
+        {
+            result+=max(rem[r],rem[k-r]);
+        }
+    }
+    return result;
+
+}
