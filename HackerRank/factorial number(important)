@@ -1,6 +1,6 @@
 https://www.hackerrank.com/challenges/extra-long-factorials/problem?isFullScreen=true
 
-
+Easy solution
 code:
 #include<bits/stdc++.h>
 using namespace std;
@@ -44,3 +44,15 @@ int32_t main()
     cin>>n;
     extraLongFactorials(n);
 }
+
+
+n=5, so 5!=?
+i=2 : 1*2 equal 2
+i=3 : digit[0]*i+carry =2*3 +0 =6
+i=4 : digit[0] * 4 +carry =6*4+0=2 4, here let digit[0]=4,digit[1]=2
+i=5 :
+(ind)j=1 0
+       2 4   // digit(vector)
+       * 5   //i
+       ---   car=2 , car=1
+     1 2 0
